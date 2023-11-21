@@ -39,14 +39,13 @@ public class QueryOnLocal {
             return;
         }
 
-        // -f sample -fp ./src/resources/ -q 3 -ms 2000000 -ws 30 -ss 7 -tc 5 -gt 50
         // parse all necessary command line options
         String filePath = line.getOptionValue("fp", "./src/main/resources/");
         String fileName = line.getOptionValue("f", "sample") + ".txt";
         String queryCase = line.getOptionValue("q", "q_3");
-        int maxSize = Integer.parseInt(line.getOptionValue("ms", "200000"));
-        long windowSize = Long.parseLong(line.getOptionValue("ws", "30"));
-        long slideSize = Long.parseLong(line.getOptionValue("ss", "7"));
+        int maxSize = Integer.parseInt(line.getOptionValue("ms", "200"));
+        long windowSize = Long.parseLong(line.getOptionValue("ws", "7"));
+        long slideSize = Long.parseLong(line.getOptionValue("ss", "1"));
         int threadCount = Integer.parseInt(line.getOptionValue("tc", "5"));
         int GCThreshold = Integer.parseInt(line.getOptionValue("gt", "50"));
         int fixedThroughput = Objects.equals(line.getOptionValue("ft"), "") ? Integer.parseInt(line.getOptionValue("ft")):Integer.MAX_VALUE;
