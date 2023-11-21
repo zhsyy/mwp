@@ -43,4 +43,4 @@ Please see https://stackexchange.com/ and https://yago-knowledge.org/ to learn h
 
 ## Issue
 
-If you have any problem, feel free to write your questions in ISSUE.
+If you have any questions, feel free to write your question in ISSUE.
